@@ -17,7 +17,7 @@ export default function RandomColor(){
             hexColor += hex[randomColorUtility(hex.length)];
         }
 
-        console.log(hexColor);
+       // console.log(hexColor);
         setColor(hexColor);
     }
 
@@ -32,6 +32,7 @@ export default function RandomColor(){
     useEffect(()=>{
         if(typeOfColor === 'rgb') handleCreateRandomRgbColor();
         else handleCreateRandomHexColor();
+
     },[typeOfColor])
 
     return (
